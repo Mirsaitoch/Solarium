@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph2"
+    app:startDestination="@id/NoteFragment">
+
+    <fragment
+        android:id="@+id/NoteFragment"
+        android:name="com.example.fin_reg.Student_java.Student_note"
+        android:label="activity_student_note"
+        tools:layout="@layout/activity_student_note" />
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.example.fin_reg.Student_java.Student_profile"
+        android:label="activity_student_profile"
+        tools:layout="@layout/activity_student_profile" />
+</navigation>

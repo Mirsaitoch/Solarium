@@ -64,19 +64,19 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/registerEmail" />
 
-            <EditText
-                android:id="@+id/registerPhone"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="16dp"
-                android:ems="10"
-                android:hint="Phone Number"
-                android:inputType="phone"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
+<!--            <EditText-->
+<!--                android:id="@+id/registerPhone"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:ems="10"-->
+<!--                android:hint="Phone Number"-->
+<!--                android:inputType="phone"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/registerPassword" />-->
 
             <CheckBox
                 android:id="@+id/isTeacher"
@@ -86,7 +86,7 @@
                 android:layout_marginTop="8dp"
                 android:text="Register As Teacher"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/registerPhone" />
+                app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
 
             <CheckBox
                 android:id="@+id/isStudent"
@@ -97,7 +97,7 @@
                 android:text="Register as Student"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/isTeacher"
-                app:layout_constraintTop_toBottomOf="@+id/registerPhone" />
+                app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
 
             <Button
                 android:id="@+id/registerBtn"

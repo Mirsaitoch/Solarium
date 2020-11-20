@@ -1,10 +1,10 @@
 package com.example.fin_reg;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -12,15 +12,16 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 
-import org.w3c.dom.Document;
+import com.example.fin_reg.Student_java.StudentMainActivity;
+import com.example.fin_reg.Teacher_java.TeacherMainActivity;
+
 
 import java.util.HashMap;
 import java.util.Map;
@@ -29,24 +30,21 @@ public class Register extends AppCompatActivity {
     EditText fullName, email, password, phone;
     Button registerBtn, goToLogin;
     boolean valid = true;
-    FirebaseAuth fAuth;
-    FirebaseFirestore fStore;
-    CheckBox isTeacherBox, isStudentBox;
 
+    CheckBox isTeacherBox, isStudentBox;
+    String url = "http://192.168.43.250:8000";
+    String userCreateUrl = "/api/user";
+    String url_ = url + userCreateUrl;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-
-        fAuth = FirebaseAuth.getInstance();
-        fStore = FirebaseFirestore.getInstance();
-
         fullName = findViewById(R.id.registerName);
         email = findViewById(R.id.registerEmail);
         password = findViewById(R.id.registerPassword);
-        phone = findViewById(R.id.registerPhone);
+//        phone = findViewById(R.id.registerPhone);
         registerBtn = findViewById(R.id.registerBtn);
         goToLogin = findViewById(R.id.gotoLogin);
         isStudentBox = findViewById(R.id.isStudent);
@@ -54,8 +52,8 @@ public class Register extends AppCompatActivity {
 
         isStudentBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b ) {
-                if(compoundButton.isChecked()){
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (compoundButton.isChecked()) {
                     isTeacherBox.setChecked(false);
                 }
             }
@@ -64,8 +62,8 @@ public class Register extends AppCompatActivity {
 
         isTeacherBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b ) {
-                if(compoundButton.isChecked()){
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+                if (compoundButton.isChecked()) {
                     isStudentBox.setChecked(false);
                 }
             }
@@ -78,61 +76,70 @@ public class Register extends AppCompatActivity {
                 checkField(fullName);
                 checkField(email);
                 checkField(password);
-                checkField(phone);
+//                checkField(phone);
 
 
-                if(!(isTeacherBox.isChecked() || isStudentBox.isChecked())){
+                if (!(isTeacherBox.isChecked() || isStudentBox.isChecked())) {
                     return;
 
                 }
 
-
                 if (valid) {
-                    fAuth.createUserWithEmailAndPassword(email.getText().toString(), password.getText().toString()).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
+
+                    RequestQueue requestQueue = Volley.newRequestQueue(Register.this);
+
+                    StringRequest postRequest = new StringRequest(Request.Method.POST, url_,
+                            new Response.Listener<String>() {
+                                @Override
+                                public void onResponse(String response) {
+                                    // response
+                                    Log.d("Response", response);
+                                }
+                            },
+                            new Response.ErrorListener() {
+                                @Override
+                                public void onErrorResponse(VolleyError error) {
+                                    Toast.makeText(getApplicationContext(), error.toString(), Toast.LENGTH_LONG).show();
+                                }
+                            }
+                    ) {
                         @Override
-                        public void onSuccess(AuthResult authResult) {
-                            FirebaseUser user = fAuth.getCurrentUser();
-                            Toast.makeText(Register.this, "account created", Toast.LENGTH_SHORT).show();
-                            DocumentReference df = fStore.collection("Users").document(user.getUid());
-                            Map<String, Object> userInfo = new HashMap<>();
-                            userInfo.put("FullName", fullName.getText().toString());
-                            userInfo.put("UserEmail", email.getText().toString());
-                            userInfo.put("PhoneNumber", phone.getText().toString());
+                        protected Map<String, String> getParams() {
+                            Map<String, String> params = new HashMap<String, String>();
+                            params.put("username", fullName.getText().toString());
+                            params.put("email", email.getText().toString());
+                            params.put("password", password.getText().toString());
+
+
                             if(isTeacherBox.isChecked()){
-                                userInfo.put("isTeacher", "1");
+                                params.put("role", "2");
 
                             }
                             if(isStudentBox.isChecked()){
-                                userInfo.put("isStudent", "1");
+                                params.put("role", "1");
 
                             }
-                            df.set(userInfo);
 
-                            if(isTeacherBox.isChecked()){
-                                startActivity(new Intent(getApplicationContext(), Admin.class));
+                            if (isTeacherBox.isChecked()) {
+                                //исправить
+                                startActivity(new Intent(getApplicationContext(), TeacherMainActivity.class));
                                 finish();
 
                             }
 
-                            if(isStudentBox.isChecked()) {
-                                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            if (isStudentBox.isChecked()) {
+                                startActivity(new Intent(getApplicationContext(), StudentMainActivity.class));
                                 finish();
                             }
-
-
-
-
-
+                            return params;
                         }
-                    }).addOnFailureListener(new OnFailureListener() {
-                        @Override
-                        public void onFailure(@NonNull Exception e) {
-                            Toast.makeText(Register.this, "FAil to create acc", Toast.LENGTH_SHORT).show();
-                        }
-                    });
-
+                    };
+                    requestQueue.add(postRequest);
+                    //startActivity(new Intent(getApplicationContext(), TeacherMainActivity.class));
+                    finish();
 
                 }
+
 
             }
         });
@@ -156,3 +163,14 @@ public class Register extends AppCompatActivity {
         return valid;
     }
 }
+
+//if(isTeacherBox.isChecked()){
+//        startActivity(new Intent(getApplicationContext(), Admin.class));
+//        finish();
+//
+//        }
+//
+//if(isStudentBox.isChecked()) {
+//
+//        finish();
+//        }
