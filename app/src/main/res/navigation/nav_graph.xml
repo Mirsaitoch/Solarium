@@ -3,16 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment2">
+    app:startDestination="@id/group_fragment">
 
     <fragment
-        android:id="@+id/homeFragment2"
-        android:name="com.example.fin_reg.Teacher_java.Teacher_groups"
-        android:label="activity_home_fragment"
-        tools:layout="@layout/activity_teacher_groups" />
+        android:id="@+id/teacher_profile_fragment"
+        android:name="com.example.fin_reg.ui.teacher_profile.Profile_teacherFragment"
+        android:label="profile_teacher_fragment"
+        tools:layout="@layout/groups_fragment" />
     <fragment
-        android:id="@+id/dashboardFragment2"
-        android:name="com.example.fin_reg.Teacher_java.Teacher_profile"
-        android:label="activity_dashboard"
-        tools:layout="@layout/activity_teacher_profile" />
+        android:id="@+id/group_fragment"
+        android:name="com.example.fin_reg.ui.groups.GroupsFragment"
+        android:label="groups_teacher"
+        tools:layout="@layout/profile_teacher_fragment" />
 </navigation>

@@ -1,29 +1,19 @@
 package com.example.fin_reg;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.android.volley.NetworkResponse;
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
-import com.example.fin_reg.Student_java.StudentMainActivity;
+import androidx.appcompat.app.AppCompatActivity;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.HashMap;
-import java.util.Map;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class Login extends AppCompatActivity {
     EditText email, password;
@@ -53,11 +43,11 @@ public class Login extends AppCompatActivity {
                 String mPass = password.getText().toString().trim();
 
                 if (!mEmail.isEmpty() || !mPass.isEmpty()) {
-//
+
                     Login(mEmail, mPass);
 
                 } else {
-                    Toast.makeText(getApplicationContext(), "Заполните данные", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "Заполните все данные!", Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -70,70 +60,71 @@ public class Login extends AppCompatActivity {
         });
     }
 
-    private void Login(final String email, final String password) {
-        String url = "http://192.168.43.250:8000/api/user/login";
-        StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+
+
+    private void Login(final String mEmail, final String mPass) {
+        LoginRequest loginRequest =  new LoginRequest();
+        loginRequest.setEmail(mEmail);
+        loginRequest.setPassword(mPass);
+
+        Call<LoginResponse> loginResponseCall = ApiClient.getUserService().userLogin(loginRequest);
+
+        loginResponseCall.enqueue(new Callback<LoginResponse>() {
             @Override
-            public void onResponse(String response) {
-//                Toast.makeText(Login.this, response, Toast.LENGTH_SHORT).show();
+            public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
+                if(response.isSuccessful()){
 
+                    LoginResponse loginResponse = response.body();
 
-                try {
-                    JSONObject jsonObject = new JSONObject(response);
-                    JSONObject jsonData = jsonObject.getJSONObject("data");
-                    JSONObject jsonUser = jsonData.getJSONObject("user");
-                    String role = jsonUser.getString("role");
-                    String token = jsonData.getString("token");
-                    Toast.makeText(Login.this, role, Toast.LENGTH_SHORT).show();
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
 
+                            if(response.body().getRole().equals("Student")) {
 
-                    if (role.equals("Teacher")) {
-                        Intent intent = new Intent(Login.this, StudentMainActivity.class);
-                        intent.putExtra("token", token);
-                        startActivity(intent);
-                    }
-                    if (role.equals("Student")) {
-                        Intent intent = new Intent(Login.this, StudentMainActivity.class);
-                        intent.putExtra("token", token);
-                        startActivity(intent);
-                    }
-
-                } catch (JSONException e) {
-
-                    Toast.makeText(getApplicationContext(), "Ошибка с подключением", Toast.LENGTH_LONG).show();
+                                startActivity(new Intent(Login.this, StudentMainActivity.class).putExtra("data", loginResponse.getEmail()));
+                            }
+                            else{
+                                Toast.makeText(Login.this, "error", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }, 700 );
 
                 }
+                else{
+                    Toast.makeText(Login.this, "Неправильный логин или пароль!", Toast.LENGTH_SHORT).show();
+                }
             }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-                NetworkResponse networkResponse = error.networkResponse;
-                if (networkResponse != null && networkResponse.data != null) {
-                    String jsonError = new String(networkResponse.data);
-                    Toast.makeText(Login.this, jsonError, Toast.LENGTH_SHORT).show();}
-                    Toast.makeText(Login.this, "Ошибка: " + error, Toast.LENGTH_SHORT).show();
-
-//
-//                Toast.makeText(getApplicationContext(), "Неверное имя пользователя или пароль" + error, Toast.LENGTH_LONG).show();
-
-            }
-        }) {
 
             @Override
-            protected Map<String, String> getParams() {
-                Map<String, String> map = new HashMap<>();
-                map.put("email", email);
-                map.put("password", password);
-                return map;
+            public void onFailure(Call<LoginResponse> call, Throwable t) {
+                Toast.makeText(Login.this, "Throwable "+t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+
             }
-        };
-        RequestQueue requestQueue = Volley.newRequestQueue(getApplicationContext());
-        requestQueue.add(request);
+        });
+
     }
+
+
+
+
 }
 
 
+
+
+//
+//            @Override
+//            protected Map<String, String> getParams() {
+//                Map<String, String> map = new HashMap<>();
+//                map.put("email", email);
+//                map.put("password", password);
+//                return map;
+//            }
+//        }
+//
+//
+//
 
 
 

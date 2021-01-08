@@ -12,20 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Student_java.Student_note"></activity>
-        <activity android:name=".Student_java.Student_profile" />
-        <activity android:name=".Student_java.StudentMainActivity" />
-        <activity android:name=".Teacher_java.Teacher_groups" />
-        <activity android:name=".Teacher_java.Teacher_profile" />
-        <activity android:name=".Teacher_java.TeacherMainActivity" />
-        <activity android:name=".Register" />
-        <activity android:name=".Login">
+
+
+
+        <activity android:name=".TeacherMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity android:name=".StudentMainActivity"/>
+        <activity android:name=".Register" />
+        <activity android:name=".Login"/>
     </application>
 
 </manifest>

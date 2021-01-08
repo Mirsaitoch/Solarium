@@ -2,11 +2,12 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/NoteFragment"
+        android:id="@+id/note_fragment"
         android:icon="@drawable/assigmeant"
         android:title="Дневник" />
     <item
-        android:id="@+id/ProfileFragment"
+        android:id="@+id/profile_fragment"
         android:icon="@drawable/profile"
         android:title="Профиль" />
+
 </menu>
