@@ -23,9 +23,6 @@ public class GroupsFragment extends Fragment {
         groupsViewModel =
                 ViewModelProviders.of(this).get(GroupsViewModel.class);
         View root = inflater.inflate(R.layout.groups_fragment, container, false);
-
-        textView = root.findViewById(R.id.text_group);
-
         return root;
     }
 
@@ -33,7 +30,6 @@ public class GroupsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        textView.setText("group fragment");
 
     }
 

@@ -16,7 +16,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class Login extends AppCompatActivity {
-    EditText email, password;
+    EditText login, password;
     Button loginBtn, gotoRegister;
 
 
@@ -29,22 +29,21 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-        email = findViewById(R.id.loginEmail);
+        login = findViewById(R.id.loginLogin);
         password = findViewById(R.id.loginPassword);
         loginBtn = findViewById(R.id.loginBtn);
-        gotoRegister = findViewById(R.id.gotoRegister);
 
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                String mEmail = email.getText().toString().trim();
+                String mLogin = login.getText().toString().trim();
                 String mPass = password.getText().toString().trim();
 
-                if (!mEmail.isEmpty() || !mPass.isEmpty()) {
+                if (!mLogin.isEmpty() || !mPass.isEmpty()) {
 
-                    Login(mEmail, mPass);
+                    Login(mLogin, mPass);
 
                 } else {
                     Toast.makeText(getApplicationContext(), "Заполните все данные!", Toast.LENGTH_LONG).show();
@@ -52,19 +51,19 @@ public class Login extends AppCompatActivity {
             }
         });
 
-        gotoRegister.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), Register.class));
-            }
-        });
+//        gotoRegister.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(getApplicationContext(), Register.class));
+//            }
+//        });
     }
 
 
 
     private void Login(final String mEmail, final String mPass) {
         LoginRequest loginRequest =  new LoginRequest();
-        loginRequest.setEmail(mEmail);
+        loginRequest.setLogin(mEmail);
         loginRequest.setPassword(mPass);
 
         Call<LoginResponse> loginResponseCall = ApiClient.getUserService().userLogin(loginRequest);
@@ -74,18 +73,22 @@ public class Login extends AppCompatActivity {
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
                 if(response.isSuccessful()){
 
+
                     LoginResponse loginResponse = response.body();
 
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
 
-                            if(response.body().getRole().equals("Student")) {
+                            String role = loginResponse.getRole();
 
-                                startActivity(new Intent(Login.this, StudentMainActivity.class).putExtra("data", loginResponse.getEmail()));
+
+                            if(1 ==2 ) {
+
+                                startActivity(new Intent(Login.this, StudentMainActivity.class).putExtra("data", loginResponse.getLogin()));
                             }
                             else{
-                                Toast.makeText(Login.this, "error", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Login.this, "error not stud", Toast.LENGTH_SHORT).show();
                             }
                         }
                     }, 700 );
@@ -109,23 +112,6 @@ public class Login extends AppCompatActivity {
 
 
 }
-
-
-
-
-//
-//            @Override
-//            protected Map<String, String> getParams() {
-//                Map<String, String> map = new HashMap<>();
-//                map.put("email", email);
-//                map.put("password", password);
-//                return map;
-//            }
-//        }
-//
-//
-//
-
 
 
 

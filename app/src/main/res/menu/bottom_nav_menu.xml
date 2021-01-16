@@ -4,7 +4,7 @@
     <item
         android:id="@+id/group_fragment"
         android:icon="@drawable/ic_group_black_24dp"
-        android:title="Группы" />
+        android:title="Группы"/>
     <item
         android:id="@+id/teacher_profile_fragment"
         android:icon="@drawable/profile"

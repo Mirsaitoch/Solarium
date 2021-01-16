@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="TextView">#A4E0D5</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorBack">#EBBB36</color>
-    <color name="colorBack2">#bbb0d8</color>
+    <color name="colorBack2">#9977D8</color>
+    <color name="Button">#6FB2DF</color>
+    <color name="BackGround">#DBD3D3</color>
 </resources>

@@ -13,13 +13,13 @@ public class LoginResponse {
     @Expose
     private String token;
 
-    @SerializedName("email")
+    @SerializedName("login")
     @Expose
-    private String email;
+    private String login;
 
-    @SerializedName("role")
+    @SerializedName("role_id")
     @Expose
-    private String role;
+    private String role_id;
 
 
 
@@ -51,25 +51,23 @@ public class LoginResponse {
 
 
 
-
-
-    public String getEmail() {
-        return email;
+    public String getLogin() {
+        return login;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
 
 
 
     public String getRole() {
-        return role;
+        return role_id;
     }
 
-    public void setRole(String role) {
-        this.role = role;
+    public void setRole(String role_id) {
+        this.role_id = role_id;
     }
 
 
