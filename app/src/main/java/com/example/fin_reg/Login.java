@@ -82,8 +82,7 @@ public class Login extends AppCompatActivity {
 
                             String role = loginResponse.getRole();
 
-
-                            if(1 ==2 ) {
+                            if(role.equals("1")) {
 
                                 startActivity(new Intent(Login.this, StudentMainActivity.class).putExtra("data", loginResponse.getLogin()));
                             }
