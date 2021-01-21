@@ -1145,9 +1145,9 @@ public final class R {
         public static final int transition_position = 0x7f080100;
         public static final int transition_scene_layoutid_cache = 0x7f080101;
         public static final int transition_transform = 0x7f080102;
-        public static final int uniform = 0x7f080103;
-        public static final int unlabeled = 0x7f080104;
-        public static final int up = 0x7f080105;
+        public static final int uniform = 0x7f080107;
+        public static final int unlabeled = 0x7f080108;
+        public static final int up = 0x7f080109;
         public static final int view_offset_helper = 0x7f08010b;
         public static final int visible = 0x7f08010c;
         public static final int wrap_content = 0x7f080111;

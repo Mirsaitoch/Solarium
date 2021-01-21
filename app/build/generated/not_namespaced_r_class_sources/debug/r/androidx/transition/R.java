@@ -778,8 +778,8 @@ public final class R {
         public static final int transition_position = 0x7f080100;
         public static final int transition_scene_layoutid_cache = 0x7f080101;
         public static final int transition_transform = 0x7f080102;
-        public static final int uniform = 0x7f080103;
-        public static final int up = 0x7f080105;
+        public static final int uniform = 0x7f080107;
+        public static final int up = 0x7f080109;
         public static final int visible_removing_fragment_view_tag = 0x7f08010d;
         public static final int wrap_content = 0x7f080111;
     }

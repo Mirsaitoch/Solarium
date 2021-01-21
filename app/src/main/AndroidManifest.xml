@@ -13,7 +13,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
-        <activity android:name=".Login">
+        <activity android:name=".TeacherMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -22,7 +22,7 @@
         </activity>
 
         <activity android:name=".StudentMainActivity"/>
-        <activity android:name=".TeacherMainActivity"/>
+        <activity android:name=".Login"/>
     </application>
 
 </manifest>

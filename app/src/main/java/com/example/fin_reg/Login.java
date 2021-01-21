@@ -3,6 +3,7 @@ package com.example.fin_reg;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -59,9 +60,7 @@ public class Login extends AppCompatActivity {
 //        });
     }
 
-
-
-    private void Login(final String mEmail, final String mPass) {
+    public void Login(final String mEmail, final String mPass) {
         LoginRequest loginRequest =  new LoginRequest();
         loginRequest.setLogin(mEmail);
         loginRequest.setPassword(mPass);
@@ -72,7 +71,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onResponse(Call<LoginResponse> call, Response<LoginResponse> response) {
                 if(response.isSuccessful()){
-
+                    Log.e("successful", response.body().toString());
 
                     LoginResponse loginResponse = response.body();
 
@@ -80,9 +79,7 @@ public class Login extends AppCompatActivity {
                         @Override
                         public void run() {
 
-                            String role = loginResponse.getRole();
-
-                            if(role.equals("1")) {
+                            if(1 == 2) {
 
                                 startActivity(new Intent(Login.this, StudentMainActivity.class).putExtra("data", loginResponse.getLogin()));
                             }

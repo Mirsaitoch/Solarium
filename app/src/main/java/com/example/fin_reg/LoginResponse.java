@@ -1,43 +1,25 @@
 package com.example.fin_reg;
 
-import com.google.gson.annotations.Expose;
-import com.google.gson.annotations.SerializedName;
-
 public class LoginResponse {
 
-    @SerializedName("username")
     private String username;
 
-
-    @SerializedName("token")
-    @Expose
     private String token;
 
-    @SerializedName("login")
-    @Expose
     private String login;
 
-    @SerializedName("role_id")
-    @Expose
     private String role_id;
 
-
-
-
+    private String body;
 
 
     public String getUsername() {
         return username;
     }
 
-
     public void setUsername(String username) {
         this.username = username;
     }
-
-
-
-
 
     public String getToken() {
         return token;
@@ -47,10 +29,6 @@ public class LoginResponse {
         this.token = token;
     }
 
-
-
-
-
     public String getLogin() {
         return login;
     }
@@ -59,17 +37,30 @@ public class LoginResponse {
         this.login = login;
     }
 
-
-
-
-    public String getRole() {
+    public String getRole_id() {
         return role_id;
     }
 
-    public void setRole(String role_id) {
+    public void setRole_id(String role_id) {
         this.role_id = role_id;
     }
 
+    public String getBody() {
+        return body;
+    }
 
+    public void setBody(String body) {
+        this.body = body;
+    }
 
+    @Override
+    public String toString() {
+            return "LoginResponse{" +
+                    "username='" + username + '\'' +
+                    ", token='" + token + '\'' +
+                    ", login='" + login + '\'' +
+                    ", role_id='" + role_id + '\'' +
+                    ", body='" + body + '\'' +
+                    '}';
+    }
 }
