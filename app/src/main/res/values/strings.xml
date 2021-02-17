@@ -1,6 +1,11 @@
 <resources>
-    <string name="app_name">fin_reg</string>
+    <string name="app_name" translatable="false">fin_reg</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="pref_file_key" translatable="false">pref_file_key</string>
+    <string name="pref_is_user_login" translatable="false">isuserlogin</string>
+    <string name="pref_name_of_user" translatable="false">nameuser</string>
+    <string name="pref_token" translatable="false">token</string>
+    <string name="pref_user_post">user_post</string>
 </resources>

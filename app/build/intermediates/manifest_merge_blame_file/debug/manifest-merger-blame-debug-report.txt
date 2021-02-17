@@ -37,9 +37,9 @@
 23-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:13:9-40
 24        android:usesCleartextTraffic="true" >
 24-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:14:9-44
-25        <activity android:name="com.example.fin_reg.TeacherMainActivity" >
+25        <activity android:name="com.example.fin_reg.Login" >
 25-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:16:9-22:20
-25-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:16:19-54
+25-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:16:19-40
 26            <intent-filter>
 26-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:17:13-21:29
 27                <action android:name="android.intent.action.MAIN" />
@@ -54,9 +54,9 @@
 32        <activity android:name="com.example.fin_reg.StudentMainActivity" />
 32-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:24:9-56
 32-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:24:19-54
-33        <activity android:name="com.example.fin_reg.Login" />
-33-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:25:9-42
-33-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:25:19-40
+33        <activity android:name="com.example.fin_reg.TeacherMainActivity" />
+33-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:25:9-56
+33-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:25:19-54
 34        <activity
 34-->[com.google.firebase:firebase-auth:20.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/2cab7a8d41ac94630edb4a03895875af/jetified-firebase-auth-20.0.0/AndroidManifest.xml:27:9-34:50
 35            android:name="com.google.firebase.auth.internal.FederatedSignInActivity"

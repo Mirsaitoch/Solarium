@@ -4,10 +4,11 @@ ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/A
 INJECTED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:2:1-28:12
 INJECTED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:2:1-28:12
 INJECTED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:2:1-28:12
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/f3ba91f807bdee6acaac84ed5c2cd897/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [com.ismaeldivita.chipnavigation:chip-navigation-bar:1.3.4] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/bd52d865dea93971da838623fc9d0a37/chip-navigation-bar-1.3.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta8] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/9b76107982a98bcf00f52185aeab1bf9/constraintlayout-2.0.0-beta8/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.navigation:navigation-ui:2.3.1] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/12b2acf9567440425e4877f4d099de41/navigation-ui-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/089a5ab0738dab2145cf5d1e65ed067a/material-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/7bc6dcbc6005255a891a28fccadfdf4a/appcompat-1.0.2/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/20e7dc9cbe1d4c540b03299721b331cf/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-auth:20.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/2cab7a8d41ac94630edb4a03895875af/jetified-firebase-auth-20.0.0/AndroidManifest.xml:17:1-91:12
 MERGED from [com.android.volley:volley:1.1.1] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/d31289c79ad296cc98ab3c1bef161678/jetified-volley-1.1.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/2688810c42c394e38b64da1198e77925/jetified-firebase-firestore-22.0.0/AndroidManifest.xml:2:1-26:12
@@ -16,12 +17,9 @@ MERGED from [androidx.navigation:navigation-fragment:2.3.1] /Users/mirsaitsabirz
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/b13eb43400db528daab44deb4abfdf7f/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/a19f045693b0d4becac991a9d9fde07e/lifecycle-extensions-2.2.0/AndroidManifest.xml:17:1-27:12
 MERGED from [io.grpc:grpc-android:1.28.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/5333efae17cb572e1895e6a9dc541d31/grpc-android-1.28.0/AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/5aca1724f54f211f13ab618ca7e32ac4/vectordrawable-animated-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/53f9192039e7bf7a469edbe8ece71372/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/ded6674a35a08fa0b6bc6f9bc08027d1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/6b6efb73d531d94f1ff78f811e063181/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/8c1b363322151ceb0a03ff58c88b33c1/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/ae8e89c9aca1d5fd9ddb2833c22d538a/vectordrawable-1.0.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/db77a0cc8a25bcdbd382ab92142eb9d8/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/2e6c64f74fe8c0eec62fa2c8ac5e3c3a/firebase-auth-interop-19.0.0/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:19.3.1] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/63630b50f827405378e4fa10e83280dc/jetified-firebase-common-19.3.1/AndroidManifest.xml:15:1-40:12
@@ -48,6 +46,9 @@ MERGED from [androidx.loader:loader:1.0.0] /Users/mirsaitsabirzanov/.gradle/cach
 MERGED from [androidx.navigation:navigation-common:2.3.1] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/46ca236416c63d8b0fc3bac33360bb38/navigation-common-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/07f6774496d7b8fc50c8e6094f3f9684/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/ffb95775609ce33ad2ae5e160263a671/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/e619b0013bfdf2153523a6b06a739a09/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/cc5ff51198d53ed624201aaf067f4ad1/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/681bf8f7de494b054d827e345a1a0d58/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.3.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/80643fed777507f7c5382d57e6645248/core-1.3.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/c7a936ae7f988bc3686d218c2928b5db/lifecycle-runtime-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/abc69881150a5fa520e6df9f84c95584/lifecycle-livedata-2.2.0/AndroidManifest.xml:17:1-24:12
@@ -60,6 +61,7 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/mirsaitsabirzanov/
 MERGED from [androidx.print:print:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/f8823c02e6667be04e347b17d7992076/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/8958668432809668ce69b8cb94c088dc/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/aca4580e962c360584e5dc21b3aaec21/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/6b6efb73d531d94f1ff78f811e063181/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/d5af6618f797ce72ffd8d9f2e77d33d9/protolite-well-known-types-17.1.0/AndroidManifest.xml:2:1-11:12
 INJECTED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:2:1-28:12
 INJECTED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:2:1-28:12
@@ -88,8 +90,8 @@ MERGED from [com.google.firebase:firebase-firestore:22.0.0] /Users/mirsaitsabirz
 		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:5:22-64
 application
 ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:7:5-26:19
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/f3ba91f807bdee6acaac84ed5c2cd897/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/f3ba91f807bdee6acaac84ed5c2cd897/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta8] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/9b76107982a98bcf00f52185aeab1bf9/constraintlayout-2.0.0-beta8/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta8] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/9b76107982a98bcf00f52185aeab1bf9/constraintlayout-2.0.0-beta8/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/089a5ab0738dab2145cf5d1e65ed067a/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/089a5ab0738dab2145cf5d1e65ed067a/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-auth:20.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/2cab7a8d41ac94630edb4a03895875af/jetified-firebase-auth-20.0.0/AndroidManifest.xml:26:5-89:19
@@ -134,10 +136,10 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mirs
 		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:13:9-40
 	android:usesCleartextTraffic
 		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:14:9-44
-activity#com.example.fin_reg.TeacherMainActivity
+activity#com.example.fin_reg.Login
 ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:16:19-54
+		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:16:19-40
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
@@ -152,22 +154,24 @@ activity#com.example.fin_reg.StudentMainActivity
 ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:24:9-56
 	android:name
 		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:24:19-54
-activity#com.example.fin_reg.Login
-ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:25:9-42
+activity#com.example.fin_reg.TeacherMainActivity
+ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:25:9-56
 	android:name
-		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:25:19-40
+		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:25:19-54
 uses-sdk
 INJECTED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml
 INJECTED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/f3ba91f807bdee6acaac84ed5c2cd897/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/f3ba91f807bdee6acaac84ed5c2cd897/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.ismaeldivita.chipnavigation:chip-navigation-bar:1.3.4] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/bd52d865dea93971da838623fc9d0a37/chip-navigation-bar-1.3.4/AndroidManifest.xml:7:5-9:41
+MERGED from [com.ismaeldivita.chipnavigation:chip-navigation-bar:1.3.4] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/bd52d865dea93971da838623fc9d0a37/chip-navigation-bar-1.3.4/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta8] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/9b76107982a98bcf00f52185aeab1bf9/constraintlayout-2.0.0-beta8/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.0-beta8] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/9b76107982a98bcf00f52185aeab1bf9/constraintlayout-2.0.0-beta8/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.navigation:navigation-ui:2.3.1] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/12b2acf9567440425e4877f4d099de41/navigation-ui-2.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.3.1] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/12b2acf9567440425e4877f4d099de41/navigation-ui-2.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/089a5ab0738dab2145cf5d1e65ed067a/material-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/089a5ab0738dab2145cf5d1e65ed067a/material-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/7bc6dcbc6005255a891a28fccadfdf4a/appcompat-1.0.2/AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.0.2] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/7bc6dcbc6005255a891a28fccadfdf4a/appcompat-1.0.2/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/20e7dc9cbe1d4c540b03299721b331cf/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/20e7dc9cbe1d4c540b03299721b331cf/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.firebase:firebase-auth:20.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/2cab7a8d41ac94630edb4a03895875af/jetified-firebase-auth-20.0.0/AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-auth:20.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/2cab7a8d41ac94630edb4a03895875af/jetified-firebase-auth-20.0.0/AndroidManifest.xml:21:5-44
 MERGED from [com.android.volley:volley:1.1.1] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/d31289c79ad296cc98ab3c1bef161678/jetified-volley-1.1.1/AndroidManifest.xml:7:5-43
@@ -184,18 +188,12 @@ MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/mirsaitsabirz
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/a19f045693b0d4becac991a9d9fde07e/lifecycle-extensions-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [io.grpc:grpc-android:1.28.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/5333efae17cb572e1895e6a9dc541d31/grpc-android-1.28.0/AndroidManifest.xml:7:5-9:41
 MERGED from [io.grpc:grpc-android:1.28.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/5333efae17cb572e1895e6a9dc541d31/grpc-android-1.28.0/AndroidManifest.xml:7:5-9:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/5aca1724f54f211f13ab618ca7e32ac4/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/5aca1724f54f211f13ab618ca7e32ac4/vectordrawable-animated-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/53f9192039e7bf7a469edbe8ece71372/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/53f9192039e7bf7a469edbe8ece71372/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/ded6674a35a08fa0b6bc6f9bc08027d1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/ded6674a35a08fa0b6bc6f9bc08027d1/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/6b6efb73d531d94f1ff78f811e063181/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/6b6efb73d531d94f1ff78f811e063181/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/8c1b363322151ceb0a03ff58c88b33c1/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/8c1b363322151ceb0a03ff58c88b33c1/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/ae8e89c9aca1d5fd9ddb2833c22d538a/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/ae8e89c9aca1d5fd9ddb2833c22d538a/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/db77a0cc8a25bcdbd382ab92142eb9d8/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/db77a0cc8a25bcdbd382ab92142eb9d8/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/2e6c64f74fe8c0eec62fa2c8ac5e3c3a/firebase-auth-interop-19.0.0/AndroidManifest.xml:5:5-44
@@ -248,6 +246,12 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mirsai
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/07f6774496d7b8fc50c8e6094f3f9684/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/ffb95775609ce33ad2ae5e160263a671/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/ffb95775609ce33ad2ae5e160263a671/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/e619b0013bfdf2153523a6b06a739a09/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/e619b0013bfdf2153523a6b06a739a09/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/cc5ff51198d53ed624201aaf067f4ad1/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/cc5ff51198d53ed624201aaf067f4ad1/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/681bf8f7de494b054d827e345a1a0d58/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/681bf8f7de494b054d827e345a1a0d58/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.3.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/80643fed777507f7c5382d57e6645248/core-1.3.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.3.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/80643fed777507f7c5382d57e6645248/core-1.3.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/c7a936ae7f988bc3686d218c2928b5db/lifecycle-runtime-2.2.0/AndroidManifest.xml:20:5-22:41
@@ -272,6 +276,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mirs
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/8958668432809668ce69b8cb94c088dc/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/aca4580e962c360584e5dc21b3aaec21/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/aca4580e962c360584e5dc21b3aaec21/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/6b6efb73d531d94f1ff78f811e063181/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/6b6efb73d531d94f1ff78f811e063181/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/d5af6618f797ce72ffd8d9f2e77d33d9/protolite-well-known-types-17.1.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:17.1.0] /Users/mirsaitsabirzanov/.gradle/caches/transforms-2/files-2.1/d5af6618f797ce72ffd8d9f2e77d33d9/protolite-well-known-types-17.1.0/AndroidManifest.xml:7:5-9:41
 INJECTED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml

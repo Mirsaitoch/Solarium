@@ -1,12 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item>
+
         <shape>
+            <stroke android:color="@color/colorWhite"
+                android:width="3dp" />
+
+            <gradient
+                android:type="linear"
+                android:startColor="#FF59d0e3"
+                android:endColor="#FF78E79E"
+                android:angle="90"/>
             <corners
-                android:bottomLeftRadius="10dp"
-                android:bottomRightRadius="10dp"
-                android:topLeftRadius="10dp"
-                android:topRightRadius="10dp" />
+                android:bottomLeftRadius="76dp"
+                android:bottomRightRadius="76dp"
+                android:topLeftRadius="76dp"
+                android:topRightRadius="76dp" />
         </shape>
     </item>
 </selector>

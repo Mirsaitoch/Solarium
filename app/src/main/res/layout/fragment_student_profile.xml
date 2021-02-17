@@ -21,13 +21,13 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="150dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
-            android:layout_height="150dp"
+            android:layout_width="180dp"
+            android:layout_marginStart="-10dp"
+            android:layout_marginRight="-10dp"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="180dp"
             app:srcCompat="@drawable/microchel"
             tools:srcCompat="@tools:sample/avatars" />
 
@@ -39,9 +39,11 @@
         android:layout_height="25dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="35dp"
-        android:text="Name"
+        android:text=""
         android:textSize="18sp"
         android:textStyle="bold"
+        android:fontFamily="@font/latobold"
+        app:fontFamily="@font/latobold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,7 +53,9 @@
         android:layout_height="25dp"
         android:layout_marginTop="140dp"
         android:layout_marginEnd="35dp"
-        android:text="Surname"
+        android:text=""
+        android:fontFamily="@font/latobold"
+        app:fontFamily="@font/latobold"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,8 +67,10 @@
         android:layout_height="25dp"
         android:layout_marginTop="180dp"
         android:layout_marginEnd="35dp"
-        android:text="Midlle name"
+        android:text=""
         android:textSize="18sp"
+        android:fontFamily="@font/latobold"
+        app:fontFamily="@font/latobold"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -75,10 +81,23 @@
         android:layout_height="25dp"
         android:layout_marginTop="220dp"
         android:layout_marginEnd="35dp"
-        android:text="User post(student)"
+        android:text=""
         android:textSize="18sp"
+        android:fontFamily="@font/latobold"
+        app:fontFamily="@font/latobold"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Button_logout"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="350dp"
+        android:text="Logout"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

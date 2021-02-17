@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/teacher_profile_fragment"
-        android:name="com.example.fin_reg.ui.teacher_profile.Profile_teacherFragment"
+        android:name="com.example.fin_reg.ui.profile_teacher.Profile_teacherFragment"
         android:label="profile_teacher_fragment"
-        tools:layout="@layout/groups_fragment" />
+        tools:layout="@layout/fragment_groups" />
     <fragment
         android:id="@+id/group_fragment"
         android:name="com.example.fin_reg.ui.groups.GroupsFragment"
         android:label="groups_teacher"
-        tools:layout="@layout/profile_teacher_fragment" />
+        tools:layout="@layout/fragment_teacher_profile" />
 </navigation>

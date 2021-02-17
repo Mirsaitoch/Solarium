@@ -19,11 +19,9 @@ public class StudentMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_main);
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
-        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.note_fragment, R.id.profile_fragment).build();
 
+        AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(R.id.note_fragment, R.id.profile_fragment).build();
         NavController navController = Navigation.findNavController(StudentMainActivity.this, R.id.nav_host_fragment2);
-
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
 
     }
