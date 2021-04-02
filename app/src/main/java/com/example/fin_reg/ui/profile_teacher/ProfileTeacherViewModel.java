@@ -9,7 +9,7 @@ public class ProfileTeacherViewModel extends ViewModel {
 
     public ProfileTeacherViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is  teacher profile fragment");
+        mText.setValue("This is teacher profile fragment");
     }
 
     public LiveData<String> getText() {

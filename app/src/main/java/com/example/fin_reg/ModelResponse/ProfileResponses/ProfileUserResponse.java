@@ -18,8 +18,6 @@ public class ProfileUserResponse {
     @SerializedName("group_id")
     private String group_id;
 
-
-
     @SerializedName("info")
     private ProfileInfoResponse user_info;
 

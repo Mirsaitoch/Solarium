@@ -10,7 +10,6 @@ public class LoginDataResponse {
 
         return data;
     }
-
     public void setData(LoginResponse data) {
         this.data = data;
     }

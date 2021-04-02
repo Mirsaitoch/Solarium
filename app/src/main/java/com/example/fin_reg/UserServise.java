@@ -1,6 +1,6 @@
 package com.example.fin_reg;
 
-import com.example.fin_reg.ModelResponse.ListTeacherGroupResponse.ListUseResponse;
+import com.example.fin_reg.ModelResponse.ListTeacherGroupResponse.DataListResponse;
 import com.example.fin_reg.ModelResponse.LoginResponses.LoginDataResponse;
 import com.example.fin_reg.ModelResponse.LoginResponses.LoginRequest;
 import com.example.fin_reg.ModelResponse.ProfileResponses.ProfileDataResponse;
@@ -16,9 +16,8 @@ public interface UserServise {
     @POST("api/login")
     Call<LoginDataResponse> userLogin(@Body LoginRequest loginRequest);
 
-
-    @GET("URL/9696")
-    Call<ListUseResponse> list_of_users();
+    @GET("api/school_class/get")
+    Call<DataListResponse> list_of_users(@Header("Authorization")String token);
 
     @GET("api/user/get")
     Call<ProfileDataResponse> profileData(@Header("Authorization") String token);

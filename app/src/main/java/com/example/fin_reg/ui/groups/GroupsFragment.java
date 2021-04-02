@@ -2,11 +2,11 @@ package com.example.fin_reg.ui.groups;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,10 +16,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.fin_reg.ApiClient;
-import com.example.fin_reg.ModelResponse.ListTeacherGroupResponse.EachUser;
-import com.example.fin_reg.ModelResponse.ListTeacherGroupResponse.ListUseResponse;
+import com.example.fin_reg.ModelResponse.ListTeacherGroupResponse.DataListResponse;
+import com.example.fin_reg.ModelResponse.ListTeacherGroupResponse.Student;
 import com.example.fin_reg.R;
 import com.example.fin_reg.UserAdapter;
+import com.example.fin_reg.apputil.AppConfig;
 
 import java.util.List;
 
@@ -31,11 +32,13 @@ public class GroupsFragment extends Fragment {
     private GroupsViewModel groupsViewModel;
 
     UserAdapter userAdapter;
-
+    private AppConfig appConfig;
     TextView textView;
     RecyclerView recyclerView;
     Context this_context;
-    List<EachUser> eachUserList ;
+
+    List<Student> studentList;
+    private String token_str;
 
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -43,6 +46,12 @@ public class GroupsFragment extends Fragment {
         groupsViewModel =
                 ViewModelProviders.of(this).get(GroupsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_groups, container, false);
+
+        this_context = container.getContext();
+
+        appConfig = new AppConfig(this_context);
+        token_str = appConfig.getToken();
+        Log.e("token", token_str);
         return root;
     }
 
@@ -51,29 +60,33 @@ public class GroupsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         recyclerView = view.findViewById(R.id.recyclerview);
-        recyclerView.setHasFixedSize(true );
+        recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
-        Call<ListUseResponse> call = ApiClient.getUserService().list_of_users();
 
-        call.enqueue(new Callback<ListUseResponse>() {
+        String token = "Bearer " + token_str;
+
+
+        Call<DataListResponse> call = ApiClient.getUserService().list_of_users(token);
+
+        call.enqueue(new Callback<DataListResponse>() {
             @Override
-            public void onResponse(Call<ListUseResponse> call, Response<ListUseResponse> response) {
-                if(response.isSuccessful()){
-                    eachUserList = response.body().getEachUserList();
-                    recyclerView.setAdapter(new UserAdapter(getActivity(), eachUserList));
+            public void onResponse(Call<DataListResponse> call, Response<DataListResponse> response) {
+                if (response.isSuccessful()) {
 
+                    studentList = response.body().getTeacherinfo().students;
+                    recyclerView.setAdapter(new UserAdapter(getActivity(), studentList));
 
+                } else {
+
+//                    Toast.makeText(getActivity(), "error", Toast.LENGTH_SHORT).show();
                 }
-                else{
-                    Toast.makeText(getActivity(), "error", Toast.LENGTH_SHORT).show();
-                }
-                
+
             }
 
             @Override
-            public void onFailure(Call<ListUseResponse> call, Throwable t) {
-                Toast.makeText(getActivity(), t.getMessage() , Toast.LENGTH_SHORT).show();
+            public void onFailure(Call<DataListResponse> call, Throwable t) {
+//                Toast.makeText(getActivity(), "ERRRRRRR" + t.getMessage() , Toast.LENGTH_SHORT).show();
 
             }
         });

@@ -19,6 +19,16 @@ public class UserDataLoginResponse {
     @SerializedName("group_id")
     private String group_id;
 
+    @SerializedName("groups")
+    private GroupsUserResponse groupsUserResponse;
+
+    public GroupsUserResponse getGroupsUserResponse() {
+        return groupsUserResponse;
+    }
+
+    public void setGroupsUserResponse(GroupsUserResponse groupsUserResponse) {
+        this.groupsUserResponse = groupsUserResponse;
+    }
 
     public String getId() {
         return id;

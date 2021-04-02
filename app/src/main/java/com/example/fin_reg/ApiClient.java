@@ -12,12 +12,13 @@ public class ApiClient  {
         HttpLoggingInterceptor httpLoggingInterceptor = new HttpLoggingInterceptor();
         httpLoggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient okHttpClient = new OkHttpClient.Builder().addInterceptor(httpLoggingInterceptor).build();
+//http://192.168.43.250:8000
 
-
+//http://10.10.174.48:8000
 
         Retrofit retrofit = new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("http://192.168.1.38:8000/")
+                .baseUrl("http://192.168.43.250:8000/")
                 .client(okHttpClient)
                 .build();
 

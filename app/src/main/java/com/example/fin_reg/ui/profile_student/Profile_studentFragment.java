@@ -26,22 +26,22 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 
-public class ProfileFragment extends Fragment {
+public class Profile_studentFragment extends Fragment {
 
-    private ProfileViewModel profileViewModel;
+    private Profile_studentViewModel profileStudentViewModel;
     private AppConfig appConfig;
     Context this_context;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        profileViewModel = ViewModelProviders.of(this).get(ProfileViewModel.class);
+        profileStudentViewModel = ViewModelProviders.of(this).get(Profile_studentViewModel.class);
         View root = inflater.inflate(R.layout.fragment_student_profile, container, false);
         this_context = container.getContext();
         appConfig = new AppConfig(this_context);
         Button button_logout = (Button) root.findViewById(R.id.Button_logout);
-        TextView name_text_view = (TextView) root.findViewById(R.id.u_name);
+//        TextView name_text_view = (TextView) root.findViewById(R.id.u_name);
         TextView surname_text_view = (TextView) root.findViewById(R.id.u_surname);
-        TextView middle_text_view = (TextView) root.findViewById(R.id.u_middle);
-        TextView post_user = (TextView) root.findViewById(R.id.u_post);
+//        TextView middle_text_view = (TextView) root.findViewById(R.id.u_middle);
+//        TextView post_user = (TextView) root.findViewById(R.id.u_post);
 
 
         String token_str = appConfig.getToken();
@@ -62,9 +62,9 @@ public class ProfileFragment extends Fragment {
                     String school_name = response.body().getUserData().getUserResponse().getUser_organization().getName();
 
 
-                    name_text_view.setText(name);
+//                    name_text_view.setText(name);
                     surname_text_view.setText(surname);
-                    middle_text_view.setText(middle_name);
+//                    middle_text_view.setText(middle_name);
 
 
                 } else {

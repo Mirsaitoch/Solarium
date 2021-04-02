@@ -9,17 +9,17 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.fin_reg.ModelResponse.ListTeacherGroupResponse.EachUser;
+import com.example.fin_reg.ModelResponse.ListTeacherGroupResponse.Student;
 
 import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder >{
-    List<EachUser> eachUserList;
+    List<Student> studentList;
     Context context;
 
-    public UserAdapter(Context context, List<EachUser> eachUserList) {
+    public UserAdapter(Context context, List<Student> studentList) {
         this.context = context;
-        this.eachUserList = eachUserList;
+        this.studentList = studentList;
 
     }
 
@@ -28,21 +28,18 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder >{
     public UserAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.row_users, parent, false);
         return new ViewHolder(view);
-
-
     }
 
     @Override
     public void onBindViewHolder(@NonNull UserAdapter.ViewHolder holder, int position) {
-
-        holder.username.setText(eachUserList.get(position).getUsername());
-        holder.organization.setText(eachUserList.get(position).getOrganization());
+        holder.username.setText(studentList.get(position).getUsername());
+        holder.organization.setText(studentList.get(position).getOrganization().getName());
 
     }
 
     @Override
     public int getItemCount() {
-        return eachUserList.size();
+        return studentList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
