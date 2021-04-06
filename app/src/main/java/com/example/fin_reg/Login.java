@@ -88,7 +88,7 @@ public class Login extends AppCompatActivity {
 
         finr_relat.setVisibility(View.VISIBLE);
         constr.setVisibility(View.GONE);
-//        relate.setVisibility(View.VISIBLE);
+
 
         LoginRequest loginRequest = new LoginRequest();
         loginRequest.setLogin(mEmail);
@@ -155,19 +155,25 @@ public class Login extends AppCompatActivity {
 
 
                             else {
-                                Toast.makeText(Login.this, "??????????" + loginResponse.getData().getUserProfile().getGroupsUserResponse().getName(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Login.this, "who are you man??", Toast.LENGTH_SHORT).show();
+
+
                             }
                         }
                     }, 1000);
 
                 } else {
                     Toast.makeText(Login.this, "Неправильный логин или пароль!", Toast.LENGTH_SHORT).show();
+                    finr_relat.setVisibility(View.GONE);
+                    constr.setVisibility(View.VISIBLE);
                 }
             }
 
             @Override
             public void onFailure(Call<LoginDataResponse> call, Throwable t) {
                 Toast.makeText(Login.this, "Throwable " + t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                finr_relat.setVisibility(View.GONE);
+                constr.setVisibility(View.VISIBLE);
                 Log.e("Error", t.getLocalizedMessage());
             }
         });

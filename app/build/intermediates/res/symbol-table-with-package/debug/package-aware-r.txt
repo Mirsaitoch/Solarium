@@ -795,10 +795,12 @@ bool abc_config_actionMenuItemAllCaps
 bool mtrl_btn_textappearance_all_caps
 color BackGround
 color Black
+color Blue
 color Button_blue
 color NiceGrey
 color Red
 color TextViewColor
+color White
 color Yellow
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
@@ -849,9 +851,8 @@ color centerColor
 color cnb_default_badge_color
 color cnb_default_unselected_color
 color colorBack2
-color colorPrimary
 color colorPrimaryDark
-color colorWhite
+color color_back
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -863,6 +864,7 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
+color dark_color
 color design_bottom_navigation_shadow_color
 color design_default_color_primary
 color design_default_color_primary_dark
@@ -886,7 +888,6 @@ color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
 color gray
-color gray_back
 color headerColor
 color highlighted_text_material_dark
 color highlighted_text_material_light
@@ -932,6 +933,7 @@ color mtrl_textinput_hovered_box_stroke_color
 color notification_action_color_filter
 color notification_icon_bg_color
 color notification_material_background_media_default_color
+color pastel_yellow
 color primary_dark_material_dark
 color primary_dark_material_light
 color primary_material_dark
@@ -940,6 +942,7 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
+color purple_btn
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -957,6 +960,7 @@ color textColor
 color tooltip_background_dark
 color tooltip_background_light
 color userRow
+color violet_color
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1287,6 +1291,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable but_shape_purple
 drawable but_shape_yellow
 drawable button_shape
 drawable common_full_open_on_phone
@@ -1308,6 +1313,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable default_img_profile
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1324,6 +1330,8 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_navigate_next_black_24dp
 drawable icon_profile
 drawable lock_png_login
+drawable lock_png_login_black
+drawable lock_png_login_yellow
 drawable menu_navigation_shape
 drawable microchel
 drawable mtrl_snackbar_background
@@ -1344,6 +1352,8 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable profile
 drawable profile_png_login
+drawable profile_png_login_black
+drawable profile_png_login_yellow
 drawable progress_shape
 drawable selector_nav_menu
 drawable text_view_shape
@@ -1534,7 +1544,6 @@ id icon_only
 id ifRoom
 id ignore
 id ignoreRequest
-id im_cardView
 id image
 id imageMore
 id imageView
@@ -1560,7 +1569,6 @@ id loginBtn
 id loginLogin
 id loginPassword
 id lottie_layer_name
-id main_cardView
 id masked
 id media_actions
 id message
@@ -1605,8 +1613,9 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id rec_cont
 id rectangles
-id recyclerview
+id recycler_stud_of_group
 id relart_fin
 id restart
 id reverse
@@ -1798,6 +1807,7 @@ layout design_navigation_menu_item
 layout design_text_input_password_icon
 layout fragment_groups
 layout fragment_note
+layout fragment_student_mini_info
 layout fragment_student_profile
 layout fragment_teacher_profile
 layout mtrl_layout_snackbar
@@ -1829,7 +1839,9 @@ mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation student_nav_graph
 navigation teacher_nav_graph
+raw dots
 raw finger_anim
+raw finger_anim_portora
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

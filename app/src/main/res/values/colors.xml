@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="TextViewColor">#A4E0D5</color>
+    <color name="TextViewColor">#f7d794</color>
 
     <color name="Yellow">#EBBB36</color>
+    <color name="pastel_yellow">#f5cd79</color>
     <color name="colorBack2">#9977D8</color>
     <color name="Button_blue">#6FB2DF</color>
     <color name="Black">#282828</color>
     <color name="NiceGrey">#2b2929</color>
     <color name="BackGround">#DBD3D3</color>
-    <color name="colorPrimary">#3d95d0</color>
+    <color name="Blue">#3d95d0</color>
     <color name="colorPrimaryDark">#2b2929</color>
     <color name="Red">#FFD50000</color>
-    <color name="colorWhite">#FFFFFF</color>
-    <color name="gray_back">#6C6666</color>
+    <color name="White">#FFFFFF</color>
+
+
+    <color name="color_back">#EFDCF9</color>
+    <color name="purple_btn">#C55FFC</color>
+    <color name="dark_color">#323E42</color>
+    <color name="violet_color">#7954A1</color>
+    
+    
+    
 
 
     <!--text color -->
-    <color name="textColor">#273d52</color>
+    <color name="textColor">#f7d794</color>
     <color name="headerColor">#145795</color>
 
 
@@ -25,7 +34,7 @@
     <color name="startColor">#006797</color>
     <color name="endColor">#489855</color>
     <color name="centerColor">#006797</color>
-    <color name="userRow">#403fc68b</color>\
+    <color name="userRow">#C55FFC</color>\
 
 
 

@@ -139,10 +139,10 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/mirsaitsabirzano
 		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:13:9-40
 	android:usesCleartextTraffic
 		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:14:9-44
-activity#com.example.fin_reg.Login
+activity#com.example.fin_reg.TeacherMainActivity
 ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:16:19-40
+		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:16:19-54
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
@@ -153,11 +153,11 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
 		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:20:27-74
-activity#com.example.fin_reg.StudentMainActivity
-ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:24:9-56
+activity#com.example.fin_reg.Login
+ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:24:9-42
 	android:name
-		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:24:19-54
-activity#com.example.fin_reg.TeacherMainActivity
+		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:24:19-40
+activity#com.example.fin_reg.StudentMainActivity
 ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:25:9-56
 	android:name
 		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:25:19-54

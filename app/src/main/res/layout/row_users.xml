@@ -5,7 +5,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:padding="10dp"
-        android:layout_height="wrap_content">
+        android:background="@color/color_back"
+        android:layout_height="70dp">
 
         <RelativeLayout
             android:layout_width="50dp"
@@ -16,24 +17,24 @@
                 android:layout_width="wrap_content"
                 android:text="A"
                 android:layout_centerInParent="true"
-                android:textColor="@color/headerColor"
+                android:textColor="@color/color_back"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
         <TextView
-            android:id="@+id/row_username"
+            android:id="@+id/row_organization"
             android:layout_width="wrap_content"
-            android:text="larntech"
+            android:text="group"
             android:layout_centerVertical="true"
             android:layout_marginStart="80dp"
-            android:textColor="@color/headerColor"
+            android:textColor="@color/dark_color"
             android:layout_height="wrap_content" />
         <TextView
-            android:id="@+id/row_organization"
+            android:id="@+id/row_username"
             android:layout_width="wrap_content"
             android:text="surname"
             android:layout_centerVertical="true"
-            android:layout_marginStart="170dp"
-            android:textColor="@color/headerColor"
+            android:layout_marginStart="150dp"
+            android:textColor="@color/dark_color"
             android:layout_height="wrap_content" />
 
         <ImageView

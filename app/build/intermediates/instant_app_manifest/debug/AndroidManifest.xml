@@ -23,15 +23,15 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
-        <activity android:name="com.example.fin_reg.Login" >
+        <activity android:name="com.example.fin_reg.TeacherMainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.fin_reg.Login" />
         <activity android:name="com.example.fin_reg.StudentMainActivity" />
-        <activity android:name="com.example.fin_reg.TeacherMainActivity" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"

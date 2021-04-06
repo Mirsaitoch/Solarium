@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -53,36 +54,32 @@ public class Profile_teacherFragment extends Fragment {
         profileData.enqueue(new Callback<ProfileDataResponse>() {
             @Override
             public void onResponse(Call<ProfileDataResponse> call, Response<ProfileDataResponse> response) {
-                if(response.isSuccessful()){
+                if (response.isSuccessful()) {
 
 //                    Toast.makeText(this_context, response.body().toString(), Toast.LENGTH_SHORT).show();
                     String name = response.body().getUserData().getUserResponse().getUser_info().getFirstname();
                     String surname = response.body().getUserData().getUserResponse().getUser_info().getLastname();
                     String middle_name = response.body().getUserData().getUserResponse().getUser_info().getMiddlename();
                     String school_name = response.body().getUserData().getUserResponse().getUser_organization().getName();
+                    String nameAndMiddle = name + " " + middle_name;
 
-                    String name_middle = name + middle_name;
-
+                    Toast.makeText(this_context, nameAndMiddle, Toast.LENGTH_SHORT).show();
 
                     surname_text_view.setText(surname);
-                    name_middle_text_view.setText(name);
-//                    middle_text_view.setText(middle_name);
+                    name_middle_text_view.setText(nameAndMiddle);
 
-                }
-                else{
+                } else {
+                    Toast.makeText(this_context, "LOADING ERROR", Toast.LENGTH_SHORT).show();
 
                 }
             }
 
             @Override
             public void onFailure(Call<ProfileDataResponse> call, Throwable t) {
+                Toast.makeText(this_context, "CONNECTION ERROR OF TEACHER PROFILE", Toast.LENGTH_SHORT).show();
 
             }
         });
-
-
-
-
 
 
         button_logout.setOnClickListener(new View.OnClickListener() {

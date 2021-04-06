@@ -15,4 +15,6 @@
         android:name="com.example.fin_reg.ui.groups.GroupsFragment"
         android:label="groups_teacher"
         tools:layout="@layout/fragment_teacher_profile" />
+
+
 </navigation>

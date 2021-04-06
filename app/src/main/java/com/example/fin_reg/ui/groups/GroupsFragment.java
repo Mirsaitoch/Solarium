@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -37,7 +38,7 @@ public class GroupsFragment extends Fragment {
     RecyclerView recyclerView;
     Context this_context;
 
-    List<Student> studentList;
+    List<Student> students;
     private String token_str;
 
 
@@ -46,12 +47,10 @@ public class GroupsFragment extends Fragment {
         groupsViewModel =
                 ViewModelProviders.of(this).get(GroupsViewModel.class);
         View root = inflater.inflate(R.layout.fragment_groups, container, false);
-
         this_context = container.getContext();
-
         appConfig = new AppConfig(this_context);
         token_str = appConfig.getToken();
-        Log.e("token", token_str);
+        Log.d("Token", token_str);
         return root;
     }
 
@@ -59,9 +58,17 @@ public class GroupsFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        recyclerView = view.findViewById(R.id.recyclerview);
+        recyclerView = view.findViewById(R.id.recycler_stud_of_group);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+
+//        ArrayList<Student> students = new ArrayList<>();
+//        // добавим в список ряд элементов
+//        students.add(0, new Student(1, "Tom"));
+//        students.add(1, new Student(2, "BILL"));
+
+//        recyclerView.setAdapter(new UserAdapter(getActivity(), students));
+
 
 
         String token = "Bearer " + token_str;
@@ -72,24 +79,18 @@ public class GroupsFragment extends Fragment {
         call.enqueue(new Callback<DataListResponse>() {
             @Override
             public void onResponse(Call<DataListResponse> call, Response<DataListResponse> response) {
-                if (response.isSuccessful()) {
-
-                    studentList = response.body().getTeacherinfo().students;
-                    recyclerView.setAdapter(new UserAdapter(getActivity(), studentList));
-
-                } else {
-
-//                    Toast.makeText(getActivity(), "error", Toast.LENGTH_SHORT).show();
-                }
-
+                students = response.body().getTeacherinfo().students;
+                recyclerView.setAdapter(new UserAdapter(getActivity(), students));
             }
 
             @Override
             public void onFailure(Call<DataListResponse> call, Throwable t) {
-//                Toast.makeText(getActivity(), "ERRRRRRR" + t.getMessage() , Toast.LENGTH_SHORT).show();
+                Toast.makeText(this_context, "Connection error", Toast.LENGTH_SHORT).show();
 
             }
         });
+
+
 
 
     }

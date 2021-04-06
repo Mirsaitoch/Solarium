@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray_back"
+    android:background="@color/color_back"
     tools:context=".Login">
 
     <RelativeLayout
@@ -12,14 +12,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="gone"
-        android:elevation="1dp"
-        android:background="@color/gray_back">
+        android:elevation="1dp">
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/fingers_anim"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:lottie_rawRes="@raw/finger_anim_portora"
+            android:layout_centerInParent="true"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            app:lottie_rawRes="@raw/dots"
             app:lottie_loop="true"
             app:lottie_autoPlay="true" />
 
@@ -38,7 +38,7 @@
         app:layout_constraintEnd_toStartOf="@+id/loginLogin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/loginLogin"
-        app:srcCompat="@drawable/profile_png_login" />
+        app:srcCompat="@drawable/profile_png_login_black" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -49,7 +49,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/loginPassword"
         app:layout_constraintBottom_toBottomOf="@id/loginPassword"
-        app:srcCompat="@drawable/lock_png_login" />
+        app:srcCompat="@drawable/lock_png_login_black" />
 
     <EditText
         android:id="@+id/loginLogin"
@@ -59,14 +59,15 @@
         android:layout_marginTop="64dp"
         android:ems="10"
         android:hint="Логин"
+        android:imeOptions="actionDone"
         android:inputType="textEmailAddress"
         android:paddingLeft="10dp"
         android:shadowRadius="15"
         android:textAlignment="textStart"
         android:textAllCaps="false"
-        android:textColor="#00dbc8"
-        android:textColorHighlight="@color/Black"
-        android:textColorHint="@color/TextViewColor"
+        android:textColor="@color/dark_color"
+        android:textColorHighlight="@color/dark_color"
+        android:textColorHint="@color/dark_color"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -80,11 +81,12 @@
         android:ems="10"
         android:hint="Пароль"
         android:layout_marginHorizontal="16dp"
+        android:imeOptions="actionDone"
         android:inputType="textPassword"
         android:paddingLeft="10dp"
         android:textAlignment="textStart"
-        android:textColor="#00dbc8"
-        android:textColorHint="@color/TextViewColor"
+        android:textColor="@color/dark_color"
+        android:textColorHint="@color/dark_color"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -101,7 +103,7 @@
         android:background="@drawable/button_shape"
         android:fontFamily="@font/latobold"
         android:text="Войти"
-        android:textColor="@color/NiceGrey"
+        android:textColor="@color/color_back"
         android:textSize="18sp"
         android:textStyle="bold"
         app:fontFamily="@font/latobold"

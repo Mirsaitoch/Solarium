@@ -1,25 +1,28 @@
 package com.example.fin_reg;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.fin_reg.ModelResponse.ListTeacherGroupResponse.Student;
+import com.example.fin_reg.ui.StudentTeacherInfo.StudentTeacherInfoFragment;
 
 import java.util.List;
 
 public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder >{
-    List<Student> studentList;
+    List<Student> students;
     Context context;
 
-    public UserAdapter(Context context, List<Student> studentList) {
+    public UserAdapter(Context context, List<Student> students) {
         this.context = context;
-        this.studentList = studentList;
+        this.students = students;
 
     }
 
@@ -28,18 +31,37 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder >{
     public UserAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.row_users, parent, false);
         return new ViewHolder(view);
+
     }
+
 
     @Override
     public void onBindViewHolder(@NonNull UserAdapter.ViewHolder holder, int position) {
-        holder.username.setText(studentList.get(position).getUsername());
-        holder.organization.setText(studentList.get(position).getOrganization().getName());
+        //!!!! this moment changed
+        holder.username.setText(students.get(position).getUsername());
+//        holder.username.setText(studentList.get(position).getUsername());
+//        holder.organization.setText(studentList.get(position).getOrganization().getName());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putInt("key_id", position);
+                StudentTeacherInfoFragment studentTeacherInfoFragment = new StudentTeacherInfoFragment();
+                studentTeacherInfoFragment.setArguments(bundle);
+                AppCompatActivity activity = (AppCompatActivity)v.getContext();
+                activity.getSupportFragmentManager().beginTransaction().replace(R.id.rec_cont, studentTeacherInfoFragment).addToBackStack(null).commit();
+
+            }
+        });
+
 
     }
 
     @Override
     public int getItemCount() {
-        return studentList.size();
+        return students.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
@@ -52,6 +74,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder >{
             organization = itemView.findViewById(R.id.row_organization);
         }
     }
+
 }
 
 //    private List<LoginData> userResponseList;

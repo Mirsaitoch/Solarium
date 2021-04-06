@@ -3,12 +3,27 @@ package com.example.fin_reg.ModelResponse.ListTeacherGroupResponse;
 import com.google.gson.annotations.SerializedName;
 
 public class Student {
+    public Student(Integer id, String username, Integer organizationId, Object role, Integer groupId, Integer schoolClassId, Info_ info, Organization_ organization, SchoolClass schoolClass, Groups_ groups) {
+        this.id = id;
+        this.username = username;
+        this.organizationId = organizationId;
+        this.role = role;
+        this.groupId = groupId;
+        this.schoolClassId = schoolClassId;
+        this.info = info;
+        this.organization = organization;
+        this.schoolClass = schoolClass;
+        this.groups = groups;
+    }
+
 
     @SerializedName("id")
     public Integer id;
 
     @SerializedName("username")
     public String username;
+
+
 
     @SerializedName("organization_id")
     public Integer organizationId;
@@ -49,7 +64,6 @@ public class Student {
     public void setUsername(String username) {
         this.username = username;
     }
-
     public Integer getOrganizationId() {
         return organizationId;
     }
@@ -81,7 +95,6 @@ public class Student {
     public void setSchoolClassId(Integer schoolClassId) {
         this.schoolClassId = schoolClassId;
     }
-
 
     public Info_ getInfo() {
         return info;
