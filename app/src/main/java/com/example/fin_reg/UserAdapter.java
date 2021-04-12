@@ -38,9 +38,9 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder >{
     @Override
     public void onBindViewHolder(@NonNull UserAdapter.ViewHolder holder, int position) {
         //!!!! this moment changed
+//        holder.username.setText(students.get(position).getUsername());
         holder.username.setText(students.get(position).getUsername());
-//        holder.username.setText(studentList.get(position).getUsername());
-//        holder.organization.setText(studentList.get(position).getOrganization().getName());
+        holder.organization.setText(students.get(position).getOrganization().getName());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
 

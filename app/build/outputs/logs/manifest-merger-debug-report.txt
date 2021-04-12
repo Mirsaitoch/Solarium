@@ -139,7 +139,7 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /Users/mirsaitsabirzano
 		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:13:9-40
 	android:usesCleartextTraffic
 		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:14:9-44
-activity#com.example.fin_reg.TeacherMainActivity
+activity#com.example.fin_reg.StudentMainActivity
 ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:name
 		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:16:19-54
@@ -157,7 +157,7 @@ activity#com.example.fin_reg.Login
 ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:24:9-42
 	android:name
 		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:24:19-40
-activity#com.example.fin_reg.StudentMainActivity
+activity#com.example.fin_reg.TeacherMainActivity
 ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:25:9-56
 	android:name
 		ADDED from /Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:25:19-54

@@ -37,7 +37,7 @@
 23-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:13:9-40
 24        android:usesCleartextTraffic="true" >
 24-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:14:9-44
-25        <activity android:name="com.example.fin_reg.TeacherMainActivity" >
+25        <activity android:name="com.example.fin_reg.StudentMainActivity" >
 25-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:16:9-22:20
 25-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:16:19-54
 26            <intent-filter>
@@ -54,7 +54,7 @@
 32        <activity android:name="com.example.fin_reg.Login" />
 32-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:24:9-42
 32-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:24:19-40
-33        <activity android:name="com.example.fin_reg.StudentMainActivity" />
+33        <activity android:name="com.example.fin_reg.TeacherMainActivity" />
 33-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:25:9-56
 33-->/Users/mirsaitsabirzanov/AndroidStudioProjects/fin_reg/app/src/main/AndroidManifest.xml:25:19-54
 34        <activity
