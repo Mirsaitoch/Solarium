@@ -40,7 +40,7 @@
                 android:layout_marginTop="-10dp"
                 android:layout_marginEnd="-10dp"
                 android:layout_marginRight="-10dp"
-                app:srcCompat="@drawable/microchel"
+                app:srcCompat="@drawable/default_img_profile"
                 tools:srcCompat="@tools:sample/avatars" />
 
         </androidx.cardview.widget.CardView>
