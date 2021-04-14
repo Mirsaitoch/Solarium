@@ -1472,6 +1472,7 @@ id clip_vertical
 id cnb_item_icon
 id collapseActionView
 id constr_s
+id constraint_layout_element
 id container
 id content
 id contentPanel
@@ -1480,7 +1481,6 @@ id cos
 id custom
 id customPanel
 id dark
-id days_listView
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -1560,6 +1560,8 @@ id labeled
 id largeLabel
 id layout
 id left
+id lesson_name
+id lesson_time
 id light
 id line1
 id line3
@@ -1695,10 +1697,12 @@ id textSpacerNoTitle
 id textStart
 id text_groups
 id text_input_password_toggle
+id text_view_element
 id textinput_counter
 id textinput_error
 id textinput_helper_text
 id time
+id timetable_list
 id title
 id titleDividerNoCustom
 id title_template
@@ -1722,6 +1726,7 @@ id unlabeled
 id up
 id useLogo
 id vertical
+id view
 id view_offset_helper
 id visible
 id visible_removing_fragment_view_tag
@@ -1812,6 +1817,7 @@ layout fragment_student_profile
 layout fragment_teacher_profile
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
+layout my_list_view_item
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1827,6 +1833,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout row_lessons_timetable
 layout row_users
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
