@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,6 +26,7 @@ import retrofit2.Response;
 
 public class Login extends AppCompatActivity {
     EditText login, password;
+    TextView text_wrong;
     Button loginBtn, gotoRegister;
     //    private boolean isUserLogin = true;
     private AppConfig appConfig;
@@ -44,6 +46,7 @@ public class Login extends AppCompatActivity {
         constr = findViewById(R.id.constr_s);
         password = findViewById(R.id.loginPassword);
         loginBtn = findViewById(R.id.loginBtn);
+        text_wrong = findViewById(R.id.wrong_pass);
         appConfig = new AppConfig(this);
         if (appConfig.isUserLogin()) {
             String name = appConfig.getName();
@@ -112,7 +115,9 @@ public class Login extends AppCompatActivity {
                                 appConfig.saveName(response.body().getData().getUserProfile().getUsername());
                                 appConfig.saveToken(response.body().getData().getToken().toString());
                                 appConfig.savePost("Teacher");
-                                startActivity(new Intent(Login.this, TeacherMainActivity.class));
+                               text_wrong.setVisibility(View.GONE);
+
+                               startActivity(new Intent(Login.this, TeacherMainActivity.class));
                                 finish();
 
                             }
@@ -125,6 +130,8 @@ public class Login extends AppCompatActivity {
                                 appConfig.saveName(response.body().getData().getUserProfile().getUsername());
                                 appConfig.saveToken(response.body().getData().getToken());
                                 appConfig.savePost("Student");
+                                text_wrong.setVisibility(View.GONE);
+
                                 startActivity(new Intent(Login.this, StudentMainActivity.class));
                                 finish();
                             }
@@ -138,6 +145,8 @@ public class Login extends AppCompatActivity {
                                 appConfig.saveName(response.body().getData().getUserProfile().getUsername());
                                 appConfig.saveToken(response.body().getData().getToken());
                                 appConfig.savePost("Admin");
+                                text_wrong.setVisibility(View.GONE);
+
                                 finish();
                             }
 
@@ -150,6 +159,8 @@ public class Login extends AppCompatActivity {
                                 appConfig.saveName(response.body().getData().getUserProfile().getUsername());
                                 appConfig.saveToken(response.body().getData().getToken());
                                 appConfig.savePost("Med");
+                                text_wrong.setVisibility(View.GONE);
+
                                 finish();
                             }
 
@@ -164,6 +175,7 @@ public class Login extends AppCompatActivity {
 
                 } else {
                     Toast.makeText(Login.this, "Неправильный логин или пароль!", Toast.LENGTH_SHORT).show();
+                    text_wrong.setVisibility(View.VISIBLE);
                     finr_relat.setVisibility(View.GONE);
                     constr.setVisibility(View.VISIBLE);
                 }
@@ -171,7 +183,9 @@ public class Login extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<LoginDataResponse> call, Throwable t) {
-                Toast.makeText(Login.this, "Throwable " + t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
+                text_wrong.setText("Ошибка подключения к серверу! Напишите разработчикам");
+                text_wrong.setVisibility(View.VISIBLE);
+                Toast.makeText(Login.this, "Ошибка подключения к серверу! Напишите разработчикам", Toast.LENGTH_SHORT).show();
                 finr_relat.setVisibility(View.GONE);
                 constr.setVisibility(View.VISIBLE);
                 Log.e("Error", t.getLocalizedMessage());

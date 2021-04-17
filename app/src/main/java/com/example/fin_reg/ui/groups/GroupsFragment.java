@@ -60,7 +60,7 @@ public class GroupsFragment extends Fragment {
 
         recyclerView = view.findViewById(R.id.recycler_stud_of_group);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
 //        ArrayList<Student> students = new ArrayList<>();
 //        // добавим в список ряд элементов
@@ -80,7 +80,7 @@ public class GroupsFragment extends Fragment {
             @Override
             public void onResponse(Call<DataListResponse> call, Response<DataListResponse> response) {
                 students = response.body().getTeacherinfo().students;
-                recyclerView.setAdapter(new UserAdapter(getActivity(), students));
+                recyclerView.setAdapter(new UserAdapter(getContext(), students));
             }
 
             @Override

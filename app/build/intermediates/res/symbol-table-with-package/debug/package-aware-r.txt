@@ -887,7 +887,6 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
-color gray
 color headerColor
 color highlighted_text_material_dark
 color highlighted_text_material_light
@@ -1320,6 +1319,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable drawer_item_color
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable group
@@ -1329,6 +1329,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_navigate_next_black_24dp
 drawable icon_profile
+drawable kaban
 drawable lock_png_login
 drawable lock_png_login_black
 drawable lock_png_login_yellow
@@ -1338,6 +1339,7 @@ drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
 drawable note1
+drawable note_pink_png
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -1351,6 +1353,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable profile
+drawable profile_pink
 drawable profile_png_login
 drawable profile_png_login_black
 drawable profile_png_login_yellow
@@ -1734,6 +1737,7 @@ id wide
 id withText
 id wrap
 id wrap_content
+id wrong_pass
 integer abc_config_activityDefaultDur
 integer abc_config_activityShortDur
 integer app_bar_elevation_anim_duration
@@ -1846,6 +1850,7 @@ mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 navigation student_nav_graph
 navigation teacher_nav_graph
+raw balls
 raw dots
 raw finger_anim
 raw finger_anim_portora
