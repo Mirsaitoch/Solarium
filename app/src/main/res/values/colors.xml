@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="TextViewColor">#f7d794</color>
-
     <color name="Yellow">#EBBB36</color>
     <color name="pastel_yellow">#f5cd79</color>
-    <color name="colorBack2">#9977D8</color>
+    <color name="Purple">#9977D8</color>
     <color name="Button_blue">#6FB2DF</color>
     <color name="Black">#282828</color>
     <color name="NiceGrey">#2b2929</color>
@@ -19,9 +17,6 @@
     <color name="purple_btn">#C55FFC</color>
     <color name="dark_color">#323E42</color>
     <color name="violet_color">#7954A1</color>
-    
-    
-    
 
 
     <!--text color -->
@@ -35,11 +30,6 @@
     <color name="endColor">#489855</color>
     <color name="centerColor">#006797</color>
     <color name="userRow">#C55FFC</color>\
-
-
-
-
-
 
 
     <!-- icon color -->

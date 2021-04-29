@@ -61,9 +61,6 @@ public class Login extends AppCompatActivity {
             if (post.equals("Teacher")) {
                 startActivity(new Intent(Login.this, TeacherMainActivity.class));
                 finish();
-            } else {
-                Toast.makeText(getApplicationContext(), "ахахаххааххах", Toast.LENGTH_LONG).show();
-
             }
         }
         loginBtn.setOnClickListener(new View.OnClickListener() {
@@ -72,7 +69,7 @@ public class Login extends AppCompatActivity {
                 String mLogin = login.getText().toString().trim();
                 String mPass = password.getText().toString().trim();
                 try {
-                    InputMethodManager imm = (InputMethodManager)getSystemService(INPUT_METHOD_SERVICE);
+                    InputMethodManager imm = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
                     imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
                 } catch (Exception e) {
                     // TODO: handle exception
@@ -109,15 +106,15 @@ public class Login extends AppCompatActivity {
                         public void run() {
 
 //                            TEACHER
-                           if (loginResponse.getData().getUserProfile().getGroupsUserResponse().getName().equals("teacher")) {
-                               Log.e("Role", "teacher");
+                            if (loginResponse.getData().getUserProfile().getGroupsUserResponse().getName().equals("teacher")) {
+                                Log.e("Role", "teacher");
                                 appConfig.updateUserLoginStatus(true);
                                 appConfig.saveName(response.body().getData().getUserProfile().getUsername());
                                 appConfig.saveToken(response.body().getData().getToken().toString());
                                 appConfig.savePost("Teacher");
-                               text_wrong.setVisibility(View.GONE);
+                                text_wrong.setVisibility(View.GONE);
 
-                               startActivity(new Intent(Login.this, TeacherMainActivity.class));
+                                startActivity(new Intent(Login.this, TeacherMainActivity.class));
                                 finish();
 
                             }
@@ -125,13 +122,11 @@ public class Login extends AppCompatActivity {
 //                           STUDENT
                             if (loginResponse.getData().getUserProfile().getGroupsUserResponse().getName().equals("student")) {
                                 Log.e("Role", "student");
-
                                 appConfig.updateUserLoginStatus(true);
                                 appConfig.saveName(response.body().getData().getUserProfile().getUsername());
                                 appConfig.saveToken(response.body().getData().getToken());
                                 appConfig.savePost("Student");
                                 text_wrong.setVisibility(View.GONE);
-
                                 startActivity(new Intent(Login.this, StudentMainActivity.class));
                                 finish();
                             }
@@ -160,16 +155,9 @@ public class Login extends AppCompatActivity {
                                 appConfig.saveToken(response.body().getData().getToken());
                                 appConfig.savePost("Med");
                                 text_wrong.setVisibility(View.GONE);
-
                                 finish();
                             }
 
-
-                            else {
-                                Toast.makeText(Login.this, "who are you man??", Toast.LENGTH_SHORT).show();
-
-
-                            }
                         }
                     }, 1000);
 

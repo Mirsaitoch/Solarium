@@ -798,8 +798,8 @@ color Black
 color Blue
 color Button_blue
 color NiceGrey
+color Purple
 color Red
-color TextViewColor
 color White
 color Yellow
 color abc_background_cache_hint_selector_material_dark
@@ -850,7 +850,6 @@ color cardview_shadow_start_color
 color centerColor
 color cnb_default_badge_color
 color cnb_default_unselected_color
-color colorBack2
 color colorPrimaryDark
 color color_back
 color common_google_signin_btn_text_dark
@@ -1329,16 +1328,13 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_navigate_next_black_24dp
 drawable icon_profile
-drawable kaban
-drawable lock_png_login
 drawable lock_png_login_black
-drawable lock_png_login_yellow
+drawable logo_purple
 drawable menu_navigation_shape
 drawable microchel
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
-drawable note1
 drawable note_pink_png
 drawable notification_action_background
 drawable notification_bg
@@ -1354,10 +1350,9 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable profile
 drawable profile_pink
-drawable profile_png_login
 drawable profile_png_login_black
-drawable profile_png_login_yellow
 drawable progress_shape
+drawable red_cross
 drawable selector_nav_menu
 drawable text_view_shape
 drawable tooltip_frame_dark
@@ -1367,6 +1362,7 @@ font lato_ital
 font latobold
 id ALT
 id Button_logout
+id Button_restart
 id CTRL
 id FUNCTION
 id META
@@ -1534,6 +1530,7 @@ id graph
 id graph_wrap
 id group_divider
 id group_fragment
+id group_id
 id grouping
 id groups
 id hardware
@@ -1553,7 +1550,9 @@ id imageMore
 id imageView
 id imageView2
 id imageView3
+id imageView4
 id info
+id interner_connection_error
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1575,6 +1574,7 @@ id loginBtn
 id loginLogin
 id loginPassword
 id lottie_layer_name
+id main
 id masked
 id media_actions
 id message
@@ -1629,7 +1629,6 @@ id reverseSawtooth
 id right
 id right_icon
 id right_side
-id row_organization
 id row_username
 id save_non_transition_alpha
 id save_overlay_view
@@ -1698,6 +1697,8 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
+id textView
+id textView2
 id text_groups
 id text_input_password_toggle
 id text_view_element

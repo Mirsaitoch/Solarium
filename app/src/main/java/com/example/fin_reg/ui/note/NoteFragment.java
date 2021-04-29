@@ -50,11 +50,6 @@ public class NoteFragment extends Fragment {
         RecyclerView recyclerView = (RecyclerView) root.findViewById(R.id.timetable_list);
 
 
-
-
-
-
-
         GregorianCalendar first_lesson_ten = new GregorianCalendar();
         first_lesson_ten.set(Calendar.HOUR, 8);
         first_lesson_ten.set(Calendar.MINUTE, 5);
@@ -146,17 +141,15 @@ public class NoteFragment extends Fragment {
         Date date = new Date();
 
 
-
-
         Boolean lesson_bool = false;
         String monthString;
         int id = -1;
 
         GregorianCalendar real_time = new GregorianCalendar();
-        int real_hour =  date.getHours();
-        int real_minutes  =  date.getMinutes();
+        int real_hour = date.getHours();
+        int real_minutes = date.getMinutes();
         int real_seconds = date.getSeconds();
-        real_time.set(Calendar.HOUR,real_hour);
+        real_time.set(Calendar.HOUR, real_hour);
         real_time.set(Calendar.MINUTE, real_minutes);
         real_time.set(Calendar.SECOND, real_seconds);
 
@@ -164,21 +157,21 @@ public class NoteFragment extends Fragment {
         System.out.println(real_time);
 
         if (free_time.before(real_time)) id = 15;
-        else if (second__additional.before(real_time) ) id  = 14;
-        else if (additional_break.before(real_time) ) id  = 13;
-        else if (first_additional.before(real_time) ) id  = 12;
-        else if (lunch_time.before(real_time) ) id  = 11;
-        else if (sixth_lesson_ten.before(real_time) ) id  = 10;
-        else if (fifth_break.before(real_time) ) id  = 9;
-        else if (fifth_lesson_ten.before(real_time) ) id  = 8;
-        else if (forth_break.before(real_time)) id  = 7;
-        else if (forth_lesson_ten.before(real_time) ) id  = 6;
-        else if (third_break.before(real_time) ) id  = 5;
-        else if (third_lesson_ten.before(real_time)) id  = 4;
-        else if (second_break.before(real_time)) id  = 3;
-        else if (second_lesson_ten.before(real_time)) id  = 2;
-        else if (first_break.before(real_time) ) id  = 1;
-        else if (first_lesson_ten.before(real_time) ) id  = 0;
+        else if (second__additional.before(real_time)) id = 14;
+        else if (additional_break.before(real_time)) id = 13;
+        else if (first_additional.before(real_time)) id = 12;
+        else if (lunch_time.before(real_time)) id = 11;
+        else if (sixth_lesson_ten.before(real_time)) id = 10;
+        else if (fifth_break.before(real_time)) id = 9;
+        else if (fifth_lesson_ten.before(real_time)) id = 8;
+        else if (forth_break.before(real_time)) id = 7;
+        else if (forth_lesson_ten.before(real_time)) id = 6;
+        else if (third_break.before(real_time)) id = 5;
+        else if (third_lesson_ten.before(real_time)) id = 4;
+        else if (second_break.before(real_time)) id = 3;
+        else if (second_lesson_ten.before(real_time)) id = 2;
+        else if (first_break.before(real_time)) id = 1;
+        else if (first_lesson_ten.before(real_time)) id = 0;
 
         System.out.println(id);
 
@@ -192,29 +185,29 @@ public class NoteFragment extends Fragment {
         return root;
     }
 
-    private void setInitialData(){
+    private void setInitialData() {
 //        String[] days = {
 //                "Первый урок", "Перемена", "Второй урок", "Перемена", "Третий урок",
 //                "Перемена", "Четвертый урок", "Перемена", "Пятый урок", "Перемена",
 //                "Шестой урок","Обеденный перерыв", "Свободное время"
 //        };
 
-        lesTimes.add(new LesTime ("Первый урок", "8:05-8:45"));
-        lesTimes.add(new LesTime ("Перемена", "8:45-8:55"));
-        lesTimes.add(new LesTime ("Второй урок", "8:55-9:35"));
-        lesTimes.add(new LesTime ("Перемена", "9:35-9:45"));
-        lesTimes.add(new LesTime ("Третий урок", "9:45-10:25"));
-        lesTimes.add(new LesTime ("Перемена", "10:25-10:40"));
-        lesTimes.add(new LesTime ("Четвертый урок", "10:40-11:20"));
-        lesTimes.add(new LesTime ("Перемена", "11:20-11:30"));
-        lesTimes.add(new LesTime ("Пятый урок", "11:30-12:10"));
-        lesTimes.add(new LesTime ("Перемена", "12:10-12:20"));
-        lesTimes.add(new LesTime ("Шестой урок", "12:20-13:00"));
-        lesTimes.add(new LesTime ("Обеденный перерыв", "13:00-14:35"));
-        lesTimes.add(new LesTime ("1-ы дополнительный урок", "14:35-15:15"));
-        lesTimes.add(new LesTime ("Перемена", "15:15-15:20"));
-        lesTimes.add(new LesTime ("2-ы дополнительный урок", "15:20-16:00"));
-        lesTimes.add(new LesTime ("Свободное время", "16:00-∞"));
+        lesTimes.add(new LesTime("Первый урок", "8:05-8:45"));
+        lesTimes.add(new LesTime("Перемена", "8:45-8:55"));
+        lesTimes.add(new LesTime("Второй урок", "8:55-9:35"));
+        lesTimes.add(new LesTime("Перемена", "9:35-9:45"));
+        lesTimes.add(new LesTime("Третий урок", "9:45-10:25"));
+        lesTimes.add(new LesTime("Перемена", "10:25-10:40"));
+        lesTimes.add(new LesTime("Четвертый урок", "10:40-11:20"));
+        lesTimes.add(new LesTime("Перемена", "11:20-11:30"));
+        lesTimes.add(new LesTime("Пятый урок", "11:30-12:10"));
+        lesTimes.add(new LesTime("Перемена", "12:10-12:20"));
+        lesTimes.add(new LesTime("Шестой урок", "12:20-13:00"));
+        lesTimes.add(new LesTime("Обеденный перерыв", "13:00-14:35"));
+        lesTimes.add(new LesTime("1-ы дополнительный урок", "14:35-15:15"));
+        lesTimes.add(new LesTime("Перемена", "15:15-15:20"));
+        lesTimes.add(new LesTime("2-ы дополнительный урок", "15:20-16:00"));
+        lesTimes.add(new LesTime("Свободное время", "16:00-∞"));
     }
 
     @Override
@@ -225,7 +218,5 @@ public class NoteFragment extends Fragment {
     }
 
 
-
-
-    }
+}
 

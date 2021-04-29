@@ -11,6 +11,7 @@ import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.POST;
+import retrofit2.http.Query;
 
 public interface UserServise {
 
@@ -24,8 +25,7 @@ public interface UserServise {
     Call<ProfileDataResponse> profileData(@Header("Authorization") String token);
 
     @GET("api/user/get")
-    Call<MiniProfileStudentDataResponse> miniInfoStudent(@Header("Authorization") String token, @Body String user_id);
-
+    Call<MiniProfileStudentDataResponse> miniInfoStudent(@Header("Authorization") String token, @Query("user_id") int str_id);
 
 
 }

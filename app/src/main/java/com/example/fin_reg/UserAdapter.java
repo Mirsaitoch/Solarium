@@ -16,13 +16,14 @@ import com.example.fin_reg.ui.StudentTeacherInfo.StudentTeacherInfoFragment;
 
 import java.util.List;
 
-public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder >{
+public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder> {
     List<Student> students;
     Context context;
 
     public UserAdapter(Context context, List<Student> students) {
         this.context = context;
         this.students = students;
+
 
     }
 
@@ -37,22 +38,21 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder >{
 
     @Override
     public void onBindViewHolder(@NonNull UserAdapter.ViewHolder holder, int position) {
-        //!!!! this moment changed
-//        holder.username.setText(students.get(position).getUsername());
-        holder.username.setText(students.get(position).getUsername());
-        holder.organization.setText(students.get(position).getOrganization().getName());
+        String surname_name_text = students.get(position).getInfo().firstname +" "+ students.get(position).getInfo().lastname;
+        String group_number = students.get(position).getSchoolClass().group + "." + students.get(position).getSchoolClass().subgroup;
+        holder.username.setText(surname_name_text);
+        holder.organization.setText(group_number);
+        int stud_id = students.get(position).getId();
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
-
             @Override
             public void onClick(View v) {
                 Bundle bundle = new Bundle();
-                bundle.putInt("key_id", position);
+                bundle.putInt("key_id", stud_id);
                 StudentTeacherInfoFragment studentTeacherInfoFragment = new StudentTeacherInfoFragment();
                 studentTeacherInfoFragment.setArguments(bundle);
-                AppCompatActivity activity = (AppCompatActivity)v.getContext();
+                AppCompatActivity activity = (AppCompatActivity) v.getContext();
                 activity.getSupportFragmentManager().beginTransaction().replace(R.id.rec_cont, studentTeacherInfoFragment).addToBackStack(null).commit();
-
             }
         });
 
@@ -67,11 +67,11 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder >{
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView username, organization;
 
-         public ViewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             username = itemView.findViewById(R.id.row_username);
-            organization = itemView.findViewById(R.id.row_organization);
+            organization = itemView.findViewById(R.id.group_id);
         }
     }
 

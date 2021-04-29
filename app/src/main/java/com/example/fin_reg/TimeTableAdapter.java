@@ -13,7 +13,7 @@ import com.example.fin_reg.ModelResponse.LessonsTime.LesTime;
 
 import java.util.List;
 
-public class TimeTableAdapter  extends RecyclerView.Adapter<TimeTableAdapter.ViewHolder>{
+public class TimeTableAdapter extends RecyclerView.Adapter<TimeTableAdapter.ViewHolder> {
 
     private final LayoutInflater inflater;
     private final List<LesTime> lesTimes;
@@ -24,6 +24,7 @@ public class TimeTableAdapter  extends RecyclerView.Adapter<TimeTableAdapter.Vie
         this.lesTimes = lesTime;
         this.inflater = LayoutInflater.from(context);
     }
+
     @Override
     public TimeTableAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
@@ -36,7 +37,7 @@ public class TimeTableAdapter  extends RecyclerView.Adapter<TimeTableAdapter.Vie
         LesTime lesTime = lesTimes.get(position);
         holder.lessonView.setText(lesTime.getLesson_object());
         holder.timeView.setText(lesTime.getTime());
-        if (position == id){
+        if (position == id) {
             holder.itemView.setBackgroundColor(Color.parseColor("#C55FFC"));
             holder.lessonView.setTextColor(Color.parseColor("#EFDCF9"));
             holder.timeView.setTextColor(Color.parseColor("#EFDCF9"));
@@ -52,7 +53,8 @@ public class TimeTableAdapter  extends RecyclerView.Adapter<TimeTableAdapter.Vie
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         final TextView lessonView, timeView;
-        ViewHolder(View view){
+
+        ViewHolder(View view) {
             super(view);
             lessonView = (TextView) view.findViewById(R.id.lesson_name);
             timeView = (TextView) view.findViewById(R.id.lesson_time);

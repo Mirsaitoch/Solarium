@@ -23,6 +23,7 @@ import com.example.fin_reg.R;
 import com.example.fin_reg.UserAdapter;
 import com.example.fin_reg.apputil.AppConfig;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
@@ -38,7 +39,7 @@ public class GroupsFragment extends Fragment {
     RecyclerView recyclerView;
     Context this_context;
 
-    List<Student> students;
+    List<Student> students = new ArrayList<>();
     private String token_str;
 
 
@@ -62,24 +63,15 @@ public class GroupsFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
-//        ArrayList<Student> students = new ArrayList<>();
-//        // добавим в список ряд элементов
-//        students.add(0, new Student(1, "Tom"));
-//        students.add(1, new Student(2, "BILL"));
-
-//        recyclerView.setAdapter(new UserAdapter(getActivity(), students));
-
-
-
         String token = "Bearer " + token_str;
-
 
         Call<DataListResponse> call = ApiClient.getUserService().list_of_users(token);
 
         call.enqueue(new Callback<DataListResponse>() {
             @Override
             public void onResponse(Call<DataListResponse> call, Response<DataListResponse> response) {
-                students = response.body().getTeacherinfo().students;
+                Log.d("Response", response.toString());
+                students = response.body().getTeacherinfo().getStudents();
                 recyclerView.setAdapter(new UserAdapter(getContext(), students));
             }
 
@@ -89,8 +81,6 @@ public class GroupsFragment extends Fragment {
 
             }
         });
-
-
 
 
     }

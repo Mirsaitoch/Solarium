@@ -12,7 +12,6 @@ public class TeacherList{
     @SerializedName("students")
     public List<Student> students = null;
 
-
     public ClassTeacher getClassTeacher() {
         return classTeacher;
     }
